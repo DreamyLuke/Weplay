@@ -1,6 +1,3 @@
-
-Este proyecto es una página web desarrollada como parte de un curso de Front-End. 
-
 # 🎮 Weplay - Online Video Game Store
 
 Este proyecto es una aplicación web interactiva desarrollada como parte del curso de Front-End JS. 
