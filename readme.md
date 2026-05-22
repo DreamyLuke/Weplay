@@ -8,9 +8,9 @@ La estética está inspirada en el mundo gamer, pero siguiendo un estilo futuris
 
 Para el desarrollo de este proyecto se emplearon las siguientes herramientas y tecnologías:
 
-* ![HTML5] Estructura semántica del sitio.
-* ![CSS3] Estética del sitio.
-* ![JavaScript]- Se utilizará más adelante para el filtrado de productos, aplicación de efectos en el sitio, carrusel y la tienda.
+* HTML5: Estructura semántica del sitio.
+* CSS3: Estética del sitio.
+* JavaScript: Se utilizará más adelante para el filtrado de productos, aplicación de efectos en el sitio, carrusel y la tienda.
 
 ## ✒️ Autora
 
