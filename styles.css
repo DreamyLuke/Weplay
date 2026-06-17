@@ -1,0 +1,443 @@
+@font-face {
+    font-family: 'typogamer';
+    src: url('./fonts/GamePlayed-vYL7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 10px;
+}
+
+:root {
+    --general: #151415;
+    --accent: #00ffff;    
+    --accent2: #9918A3;
+    --bright: #ffffff;    
+}
+
+/* HERO SECTION */
+
+header {
+    position: relative;
+    width: 100%;
+    background: transparent; 
+}
+
+.logo-nav {
+    width: 8em;
+    padding-left: 3em;
+}
+
+.logo-nav, .carrito {
+    cursor: pointer;
+}
+
+.carrito {
+    padding-right: 1.4em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    background-color: transparent;
+    z-index: 1;
+    padding-top: 1.3em;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    gap: 65px;
+    padding: 10px;
+}
+
+.nav-items a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--bright);
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 80;
+    color: var(--bright);
+    font-size: 32px !important;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-bg {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
+
+.typo-bg1 {
+    position: absolute;
+    font-family: 'typogamer';
+    font-size: 24em;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 
+        0 0 15px var(--bright),
+        0 0 15px rgba(0, 243, 255, 0.5);
+}
+
+.hero-section img {
+    position: absolute;
+    width: 50em;
+    margin-top: 5em;
+    transform: scaleX(-1);
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 30, 0.7));
+}
+
+.typo-bg2 {
+    position: absolute;
+    font-family: 'Rock Salt';
+    font-size: 6em;
+    color: var(--accent);
+    margin-top: 4em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.btn-main {
+    position: absolute;
+    font-size: 1.5em;
+    padding: 1em 4em;
+    background-color: transparent;
+    color: var(--bright);
+    margin-top: 29em;
+    border: 2px solid var(--bright);
+    border-radius: 80px;
+    cursor: pointer;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+}
+
+/* PRODUCTS SECTION */
+
+.product-section {
+    background: #000000;
+    background-color: #000;
+    background-image: 
+        radial-gradient(circle at center, rgba(8, 255, 251, 0.1) 0%, transparent 80%),
+        linear-gradient(rgba(8, 255, 251, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(8, 255, 251, 0.1) 1px, transparent 1px);
+    background-size: 100% 100%, 50px 50px, 50px 50px;
+}
+
+.titles {
+    color: var(--bright);
+    font-family: 'typogamer';
+    font-size: 4em;
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 2em;
+}
+
+.filter ul {
+    display: flex;
+    justify-content: center;
+    color: var(--bright);
+    font-size: 1.7em;
+    list-style: none;
+    font-family: "Montserrat";
+}
+
+.filter li {
+    padding: 0.5em 2em;
+    border: 2px solid var(--bright);
+    border-radius: 80px;
+    margin: 0em 0.5em;
+    cursor: pointer;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px;
+    justify-content: center;
+    gap: 7em;
+}
+
+.product-card {
+    width: 300px;
+    height: 450px;
+    background-color: var(--bright);
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    justify-content: space-between;
+}
+
+.product-card-content, .product-card-price {
+    margin:1.2em 1.4em;
+}
+
+.product-card img {
+    width: 100%;
+    height: 18em;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 14px;
+    margin-bottom: 1em;
+}
+
+.product-card h3 {
+    font-family: "Unbounded", sans-serif;
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+
+.product-card p {
+    font-family: Montserrat;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.product-card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card span {
+    font-family: Montserrat;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--accent2);
+}
+
+.product-card button {
+    font-size: 1em;
+    padding: 1.2em 4em;
+    background-color: var(--accent2);
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    font-family: "Unbounded", sans-serif;
+    color: var(--bright);
+}
+
+/* REVIEWS SECTION */
+
+.reviews-section {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.56)), url('./img/reseñas/tomb-raider.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 999;
+}
+
+.title--reviews {
+    padding-top: 1.2em;
+}
+
+.reviews-carrousel {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+
+.icono-flecha {
+    width: 8em;
+    cursor: pointer;
+}
+
+.icono-flecha--izquierda {
+    transform: scaleX(-1);
+    margin-left: 11em;
+    margin-right: 5em;
+}
+
+.reviews-card {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+}
+
+.reviews-card img {
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+    border: 4px solid var(--accent);
+    margin-bottom: 2em;
+    object-fit: cover;
+    object-position: center;
+}
+
+.reviews-card h3 {
+    font-family: Montserrat;
+    font-size: 2em;
+    color: var(--accent);
+    margin-bottom: 1em;
+}
+
+.reviews-card p {
+    color: var(--bright);
+    font-size: 1.5em;
+    font-family: Montserrat;
+}
+
+.icono-flecha--derecha {
+    transform: scaleX(1);
+    margin-left: 5em;
+    margin-right: 11em;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+    position: relative;
+    width: 100%;
+    z-index: 998;
+}
+
+.contact-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 48%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    box-shadow: 20px 0px 50px -35px var(--accent);
+}
+
+.form-container video {
+    position: absolute;
+    width: 20em;
+    left: 78em;
+    mix-blend-mode: screen;
+    opacity: 0.5;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    position: absolute;
+    flex-direction: column;
+    top: 5em;
+    margin-left: 7em;
+    flex-grow: 1;
+}
+
+.contact-section h2 {
+    font-family: 'typogamer';
+    font-size: 4em;
+    color: var(--accent);
+    padding-bottom: 1.2em;
+}
+
+.contact-items {
+    display: flex;
+    padding-bottom: 3em;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.contact-form label {
+    font-family: Montserrat;
+    color: var(--bright);
+    font-size: 1.6em;
+    width: 120px;
+    text-align: left;
+}
+
+form input {
+    border: none;
+    border-bottom: 2px solid var(--bright);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.7em 2em;
+    text-align: center;
+    outline: none;
+    width: 235px;
+    font-family: Montserrat;
+    font-size: 1.5em;
+    color: var(--accent);
+}
+
+.form-container button {
+    display: block;
+    margin: 0px auto;
+    font-size: 1.5em;
+    padding: 1em 4em;
+    background-color: transparent;
+    color: var(--bright);
+    border: 2px solid var(--bright);
+    border-radius: 80px;
+    cursor: pointer;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15em;
+}
+
+footer p {
+    font-family: Montserrat;
+    color: var(--bright);
+    font-size: 1.2em;
+    padding: 0em;
+}
+
+.logo-footer {
+    width: 15em;
+    padding-bottom: 1em;
+}
