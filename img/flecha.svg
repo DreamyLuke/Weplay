@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -16,22 +15,3 @@
 	</g>
 </g>
 </svg>
-=======
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#00FFFF;}
-</style>
-<g>
-	<g id="BACKGROUND_1_">
-		<path class="st0" d="M239.52,274.84L389.4,474.17c8.99,11.95,10.23,28.03,3.18,41.22L277.69,730.16
-			c-18.43,34.45,20.34,71.22,53.77,51L749.94,528c25.54-15.45,24.47-52.87-1.91-66.83L288.19,217.8
-			C251.91,198.59,214.84,242.03,239.52,274.84z"/>
-	</g>
-	<g id="OBJECTS_1_">
-	</g>
-</g>
-</svg>
->>>>>>> 2e56cbe382cf9ce312597d25eb7a3acb2cbe90b0

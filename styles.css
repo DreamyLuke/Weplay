@@ -21,7 +21,7 @@ body {
     --bright: #ffffff;    
 }
 
-/* HERO SECTION */
+/* HEADER */
 
 header {
     position: relative;
@@ -78,6 +78,15 @@ nav {
     font-size: 32px !important;
 }
 
+.menu-icon {
+    width: 7.5em;
+    display: none;
+    cursor: pointer;
+    padding-right: 1.4em;
+}
+
+/* HERO SECTION */
+
 .hero-section {
     position: relative;
     width: 100%;
@@ -98,6 +107,7 @@ nav {
     position: absolute;
     font-family: 'typogamer';
     font-size: 24em;
+    margin-left: 0.1em;
     color: rgba(255, 255, 255, 0.8);
     text-shadow: 
         0 0 15px var(--bright),
@@ -440,4 +450,191 @@ footer p {
 .logo-footer {
     width: 15em;
     padding-bottom: 1em;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1207px) {
+    .typo-bg1 {
+    font-size: 22em;
+    }
+
+    .typo-bg2 {
+    font-size: 5.4em;
+    margin-top: 4em;
+}
+
+.hero-section img {
+    width: 45em;
+    margin-top: 5em;
+}
+}
+
+@media (max-width: 1108px) {
+    .typo-bg1 {
+    font-size: 20em;
+    }
+
+    .typo-bg2 {
+    font-size: 5em;
+    margin-top: 4em;
+}
+
+.hero-section img {
+    width: 40em;
+    margin-top: 5em;
+}
+
+.products-container {
+    gap: 3em;
+}
+
+}
+
+@media (max-width: 1015px) {
+    .typo-bg1 {
+    font-size: 16em;
+    }
+
+    .typo-bg2 {
+    font-size: 4em;
+    margin-top: 4em;
+}
+
+.hero-section img {
+    width: 35em;
+    margin-top: 5em;
+}
+
+.products-container {
+    grid-template-columns: auto auto;
+    gap: 7em;
+}
+
+}
+
+@media (max-width: 810px) {
+    .typo-bg1 {
+    font-size: 14em;
+    margin-bottom: 0.5em;
+    }
+
+    .typo-bg2 {
+    margin-top: 2em;
+}
+
+.hero-section img {
+    width: 30em;
+    margin-bottom: 9em;
+}
+
+.nav-items, nav .carrito {
+    display: none;
+}
+
+.btn-main {
+    margin-top: 23em;
+}
+
+.menu-icon {
+    display: block;
+}
+
+.titles {
+    font-size: 3em;
+}
+
+.products-container {
+    gap: 3em;
+}
+
+}
+
+@media (max-width: 710px) {
+    .typo-bg1 {
+    text-align: center;
+    font-size: 15em;
+    margin-top: 0.2em;
+    line-height: 1em;
+    }
+
+    .typo-bg2 {
+    font-size: 3.4em;
+    margin-bottom: 2em;
+}
+
+.hero-section img {
+    width: 30em;
+    margin-bottom: 9em;
+}
+
+.btn-main {
+    margin-top: 27em;
+}
+
+}
+
+@media (max-width: 670px) {
+.products-container {
+    grid-template-columns: auto;
+}
+
+.filter ul {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.filter li {
+    margin: 0.5em 0.5em;
+    text-align: center;
+}
+
+}
+
+
+@media (max-width: 530px) {
+    .typo-bg1 {
+    text-align: center;
+    font-size: 12em;
+    margin-top: 0.2em;
+    line-height: 1em;
+    }
+
+    .typo-bg2 {
+    font-size: 2.8em;
+    margin-bottom: 2em;
+}
+
+.hero-section img {
+    width: 23em;
+    margin-bottom: 9em;
+}
+
+.btn-main {
+    margin-top: 24em;
+}
+
+.titles {
+    text-wrap: initial;
+}
+
+}
+
+@media (max-width: 420px) {
+    .typo-bg1 {
+    text-align: center;
+    font-size: 8em;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    }
+
+    .typo-bg2 {
+    font-size: 1.8em;
+    margin-bottom: 3.1em;
+}
+
+.hero-section img {
+    width: 20em;
+    margin-bottom: 10em;
+}
 }
