@@ -171,29 +171,28 @@
 
         <section id="contact-section" class="contact-section">
             <img src="./img/videogame-epic-ilustration.png" alt="personaje de videojuego con fondo épico">
-            
-            <div class="form-container">
-                <video autoplay muted loop playsinline disablePictureInPicture class="tus-brillos">
+            <video muted loop playsinline disablePictureInPicture class="tus-brillos">
                     <source src="./videos/sparkling_particle.mp4" type="video/mp4">
-                </video>
+            </video>
+            <div class="form-container">
                 <div class="contact-form">
                     <h2>Let the game begin</h2>
                     <form action="https://formspree.io/f/xpqnpngl" method="post" autocomplete="off">
                         <div class="contact-items">
                             <label for="name">Nombre</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" placeholder="Nombre" required>
                         </div>
                         <div class="contact-items">
                             <label for="email">Mail</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" placeholder="Mail" required>
                         </div>
                         <div class="contact-items">
                             <label for="phone">Celular</label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <input type="tel" id="phone" name="phone" placeholder="Celular" required>
                         </div>
                         <div class="contact-items">
                             <label for="message">Consulta</label>
-                            <input type="text" id="message" name="message" required>
+                            <input type="text" id="message" name="message" placeholder="Consulta" required>
                         </div>
                         <button>Enviar</button>
                     </form>

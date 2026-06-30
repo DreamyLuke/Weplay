@@ -283,6 +283,7 @@ nav {
     display: flex;
     flex-direction: row;
     gap: 5em;
+    overflow: hidden;
 }
 
 .icono-flecha {
@@ -297,7 +298,7 @@ nav {
 }
 
 .reviews-card {
-    width: 200px;
+    min-width: 200px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -344,9 +345,10 @@ nav {
 }
 
 .contact-section img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 53em;
     display: block;
+    object-fit: cover;
 }
 
 .form-container {
@@ -358,10 +360,11 @@ nav {
     box-shadow: 20px 0px 50px -35px var(--accent);
 }
 
-.form-container video {
+.contact-section video {
     position: absolute;
     width: 20em;
     left: 78em;
+    top: 0em;
     mix-blend-mode: screen;
     opacity: 0.5;
 }
@@ -413,6 +416,10 @@ form input {
     color: var(--accent);
 }
 
+form input::placeholder {
+    color: transparent;
+}
+
 .form-container button {
     display: block;
     margin: 0px auto;
@@ -434,10 +441,12 @@ form input {
 footer {
     background-color: black;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 15em;
+    z-index: 999;
 }
 
 footer p {
@@ -468,6 +477,11 @@ footer p {
     width: 45em;
     margin-top: 5em;
 }
+
+.contact-section video {
+    left: 75em;
+}
+
 }
 
 @media (max-width: 1108px) {
@@ -489,9 +503,17 @@ footer p {
     gap: 3em;
 }
 
+.reviews {
+    gap: 2em;
 }
 
-@media (max-width: 1015px) {
+.contact-section video {
+    left: 70em;
+}
+
+}
+
+@media (max-width: 1050px) {
     .typo-bg1 {
     font-size: 16em;
     }
@@ -509,6 +531,32 @@ footer p {
 .products-container {
     grid-template-columns: auto auto;
     gap: 7em;
+}
+
+.reviews {
+    width: 50%;
+}
+
+.contact-section h2 {
+    font-size: 3em;
+}
+
+.contact-form label {
+    display: none;
+}
+
+form input::placeholder {
+    color: #dad6d6;
+}
+
+.contact-form {
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-section video {
+    left: 63em;
 }
 
 }
@@ -548,6 +596,10 @@ footer p {
     gap: 3em;
 }
 
+.contact-section video {
+    left: 55em;
+}
+
 }
 
 @media (max-width: 710px) {
@@ -571,6 +623,29 @@ footer p {
 .btn-main {
     margin-top: 27em;
 }
+
+.contact-section img {
+    width: 80em;
+    object-fit: cover;
+    object-position: 120% center;
+}
+
+.form-container {
+    justify-self: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 50px -10px var(--accent);
+    padding: 0em 3em;
+    width: 60%;
+}
+
+.contact-form {
+    align-items: center;
+}
+
+.contact-section video {
+    left: 23em;
+}
+
 
 }
 
@@ -616,6 +691,21 @@ footer p {
 
 .titles {
     text-wrap: initial;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.contact-section h2 {
+    text-wrap: initial;
+    padding-right: 2em;
+    padding-left: 2em;
+    text-align: center; 
+}
+
+form input {
+    width: 80%;
 }
 
 }
