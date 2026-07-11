@@ -868,7 +868,7 @@ footer p {
 
 .btn-pay:hover {
     box-sizing: border-box;
-    color: var(--accent2); /
+    color: var(--accent2);
     box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
     transform: scale(1.05);
 }
@@ -1025,10 +1025,6 @@ form input::placeholder {
 .hero-section img {
     width: 30em;
     margin-bottom: 9em;
-}
-
-nav .carrito {
-    
 }
 
 .btn-main {
