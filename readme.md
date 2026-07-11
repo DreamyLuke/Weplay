@@ -13,7 +13,7 @@ Para el desarrollo de este proyecto se emplearon las siguientes herramientas y t
 
 * ![HTML5] Estructura semántica del sitio.
 * ![CSS3] Estética del sitio.
-* ![JavaScript]- Se utilizará más adelante para el filtrado de productos, aplicación de efectos en el sitio y la tienda.
+* ![JavaScript]- Filtrado de productos, carrousel, carrito de compras y aplicación de efectos en el sitio.
 
 ## ✒️ Autora
 
