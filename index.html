@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Rock+Salt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Rock+Salt&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Rock+Salt&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <img class="logo-nav" src="./img/logo-white.png" alt="logo">
             <ul class="nav-items">
                 <li><a href="#hero-section">Inicio</a></li>
@@ -24,8 +24,10 @@
                 <li><a href="#reviews-section">Reseñas</a></li>
                 <li><a href="#contact-section">Contacto</a></li>
             </ul>
-            <span class="material-symbols-outlined carrito">shopping_cart</span>
-            <img class="menu-icon" src="./img/Set of Menu Circles Flat.png" alt="menu-icon">
+            <div>
+                <span class="material-symbols-outlined menu-icon">menu</span>
+                <span class="material-symbols-outlined carrito" id="cart-icon">shopping_cart</span>
+            </div>
         </nav>
     </header>
     
@@ -44,101 +46,101 @@
             <h2 class="titles">Choose your new adventure</h2>
             <div class="filter">
                 <ul>
-                    <li>Todo</li>
-                    <li>Playstation</li>
-                    <li>PC</li>
-                    <li>Nintendo</li>
+                    <li data-filter="all">Todo</li>
+                    <li data-filter="playstation">Playstation</li>
+                    <li data-filter="pc">PC</li>
+                    <li data-filter="nintendo" >Nintendo</li>
                 </ul>
             </div>
             <div class="products-container">
-                <div class="product-card">
+                <div class="product-card" data-category="playstation">
                     <div class="product-card-content">
                         <img src="./img/play/Shadow of the Colossus-play.jpg" alt="imagen del producto">
                         <h3>Shadow of the Colossus</h3>
                         <p>En un mundo desolado y misterioso, encarnás a un joven que debe recorrer paisajes gigantescos a caballo para encontrar y derrotar a 16 colosos imponentes de piedra, usando el ingenio y la escalada como mecánicas principales.</p>
                     </div>
                     <div class="product-card-price">
-                        <span>USD 45</span><button>Agregar</button>
+                        <span>USD 45</span><button class="btn-card">Agregar</button>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="pc">
                     <div class="product-card-content">
                         <img src="./img/pc/star-wars-jedi-pc.avif" alt="imagen del producto">
                         <h3>Star Wars Jedi: Fallen Order</h3>
                         <p>Una aventura de acción cinematográfica en tercera persona. Te ponés en la piel de Cal Kestis, uno de los últimos Padawan sobrevivientes, combinando combates tácticos con sables de luz, el uso de la Fuerza y exploración de planetas alienígenas al mejor estilo Metroidvania.</p>
                     </div>
                     <div class="product-card-price">
-                        <span>USD 40</span><button>Agregar</button>
+                        <span>USD 40</span><button class="btn-card">Agregar</button>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card data-category="playstation">
                     <div class="product-card-content">
                         <img src="./img/play/GranTurismo7-play.jpeg" alt="imagen del producto">
                         <h3>Gran Turismo 7</h3>
                         <p>Ofrece una experiencia ultra realista con cientos de autos recreados al mínimo detalle, circuitos históricos de todo el mundo y un modo campaña clásico ideal para los amantes del automovilismo.</p>
                     </div>
                     <div class="product-card-price">
-                        <span>USD 70</span><button>Agregar</button>
+                        <span>USD 70</span><button class="btn-card">Agregar</button>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="pc">
                     <div class="product-card-content">
                         <img src="./img/pc/flight-simulator-pc.webp" alt="imagen del producto">
                         <h3>Flight Simulator 2024</h3>
                         <p>El simulador de aviación más avanzado y fotorealista del planeta. Utiliza datos satelitales en tiempo real para replicar la Tierra entera, permitiéndote pilotar desde avionetas ligeras hasta aviones comerciales en misiones de aviación general, rescate y transporte global.</p>
                     </div>
                     <div class="product-card-price">
-                        <span>USD 70</span><button>Agregar</button>
+                        <span>USD 70</span><button class="btn-card">Agregar</button>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="pc">
                     <div class="product-card-content">
                         <img src="./img/pc/2XKO-pc.jpg" alt="imagen del producto">
                         <h3>2XKO</h3>
                         <p>El nuevo juego de peleas en 2D por equipos del universo de League of Legends. Enfocado en el combate dinámico de "Tag Team" (dos contra dos), permite combinar las habilidades de campeones icónicos como Yasuo o Ahri en batallas frenéticas de ritmo ultra rápido.</p>
                     </div>
                     <div class="product-card-price">
-                        <span>USD 45</span><button>Agregar</button>
+                        <span>USD 45</span><button class="btn-card">Agregar</button>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="pc">
                     <div class="product-card-content">
                         <img src="./img/pc/rocket-league-pc.png" alt="imagen del producto">
                         <h3>Rocket League</h3>
                         <p>Una mezcla explosiva de fútbol y automovilismo competitivo. El concepto es tan simple como adictivo: manejás autos propulsados por cohetes en estadios cerrados con el único objetivo de empujar un balón gigante hacia la portería rival haciendo piruetas aéreas.</p>
                     </div>
                     <div class="product-card-price">
-                        <span>USD 30</span><button>Agregar</button>
+                        <span>USD 30</span><button class="btn-card">Agregar</button>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="nintendo">
                     <div class="product-card-content">
                         <img src="./img/nintendo/hyrule-nintendo.jpg" alt="imagen del producto">
                         <h3>Hyrule Warriors</h3>
                         <p>Un juego de acción masiva tipo Musou ambientado 100 años antes de los hechos de Zelda: Breath of the Wild. Controlás a Link, a Zelda y a los Elegidos en batallas multitudinarias contra ejércitos enteros de monstruos para defender el reino.</p>
                     </div>
                     <div class="product-card-price">
-                        <span>USD 50</span><button>Agregar</button>
+                        <span>USD 50</span><button class="btn-card">Agregar</button>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="nintendo">
                     <div class="product-card-content">
                         <img src="./img/nintendo/pokemon-nintendo.jpg" alt="imagen del producto">
                         <h3>Pokémon Scarlet & Violet</h3>
                         <p>La primera entrega de la saga principal de Pokémon en formato de mundo abierto total. Explora la región de Paldea a tu propio ritmo, atrapando y entrenando criaturas mientras desafías gimnasios en el orden que quieras y descubres el fenómeno de la Teracristalización.</p>
                     </div>
                     <div class="product-card-price">
-                        <span>USD 65</span><button>Agregar</button>
+                        <span>USD 65</span><button class="btn-card">Agregar</button>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" data-category="nintendo">
                     <div class="product-card-content">
                         <img src="./img/nintendo/Zelda-nintendo.webp" alt="imagen del producto">
                         <h3>The Legend of Zelda</h3>
                         <p>Una aventura revolucionaria de mundo abierto que redefine la franquicia. Explora el vasto reino de Hyrule con total libertad, resolviendo puzles en santuarios, escalando montañas y usando las leyes de la física y la química a tu favor para derrotar al mal.</p>
                     </div>
                     <div class="product-card-price">
-                        <span>USD 68</span><button>Agregar</button>
+                        <span>USD 68</span><button class="btn-card">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -158,6 +160,16 @@
                         <img src="./img/reseñas/persona1.jpg" alt="imagen del usuario">
                         <h3>Envío inmediato</h3>
                         <p>"Compré el Shadow of the Colossus y me llegó en menos de 24 horas acá en CABA. El disco vino sellado de fábrica, impecable, y la presentación del paquete un 10. Da gusto comprar formato físico cuando te lo cuidan así. Se ganaron un cliente fijo."</p>
+                    </div>
+                    <div class="reviews-card">
+                        <img src="./img/reseñas/persona3.jpg" alt="imagen del usuario">
+                        <h3>Productos oficiales</h3>
+                        <p>"Excelente experiencia de compra. Estaba buscando el Hyrule Warriors para regalarle a mi hermano por el cumpleaños. La web es súper intuitiva, coordiné el envío rápido y llegó justo a tiempo. Viene con el sello oficial, todo original."</p>
+                    </div>
+                    <div class="reviews-card">
+                        <img src="./img/reseñas/persona3.jpg" alt="imagen del usuario">
+                        <h3>Productos oficiales</h3>
+                        <p>"Excelente experiencia de compra. Estaba buscando el Hyrule Warriors para regalarle a mi hermano por el cumpleaños. La web es súper intuitiva, coordiné el envío rápido y llegó justo a tiempo. Viene con el sello oficial, todo original."</p>
                     </div>
                     <div class="reviews-card">
                         <img src="./img/reseñas/persona3.jpg" alt="imagen del usuario">
@@ -206,6 +218,80 @@
         <img class="logo-footer" src="./img/logo-white.png" alt="logo">
         <p>All Rights Reserved - Copyright © 2026 </p>
     </footer>
+    
+    <div id="cart-window-without-products">
+        <div id="cart-without-products">
+            <span class="material-symbols-outlined" id="cart-close-empty">close</span>
+            <img src="./img/carrito-vacio-img.png" alt="gamer asustado">
+            <h2>¡Tu carrito está vacío!</h2>
+            <p>¿Que esperas para elegir tu próxima aventura?</p>
+        </div>
+    </div>
+
+    <div id="cart-window" class="cart-window">
+        <div class="cart-popup">
+            <div class="cart-banner">
+                <span class="material-symbols-outlined" id="cart-close-with-products">close</span>
+                <img src="./img/Tomb Raider-Cart Banner.jpg" alt="Tomb Raider banner">
+            </div>
+            <div id="cart-with-products">
+                <div id="cart-content">
+                    <div class="cart-products">
+                        <div class="cart-column">
+                            <h2 id="cart-titulos-columnas">Aventuras Elegidas</h2>
+                            <div id="cart-products-list">
+                                <!-- Productos -->
+                            </div>
+                        </div>
+                        <div class="cart-column">
+                            <h2 id="cart-titulos-columnas">Precio</h2>
+                            <div id="cart-prices-list">
+                                <!-- Precio -->
+                            </div>
+                        </div>
+                        <div class="cart-column">
+                            <h2 id="cart-titulos-columnas">Cantidad</h2>
+                            <div id="cart-quantities-list">
+                                <!-- Cantidad -->
+                            </div>
+                        </div>
+                        <div class="cart-column">
+                            <h2 id="cart-titulos-columnas">Total</h2>
+                            <div id="cart-totals-list">
+                                <!-- Total -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-summary">
+                        <h2 id="titulo-resumen">Resumen</h2>
+                        <div class="cart-summary-content">
+                            <h2 class="subtotal-price">Subtotal</h2>
+                            <h2 class="subtotal-price">$</h2>
+                        </div>
+                        <div class="cart-summary-content">
+                            <h2 class="delivery-price">Costo de Entrega</h2>
+                            <h2 class="delivery-price">¡Gratis!</h2>
+                        </div>
+                        <div class="cart-summary-content">
+                            <h2 class="total-price">Total</h2>
+                            <h2 class="total-price">$</h2>
+                        </div>
+                        <button class="btn-pay">Pagar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div id="compra-realizada">
+        <div id="compra-realizada-content">
+            <span class="material-symbols-outlined" id="close-compra-realizada">close</span>
+            <img src="./img/compra-realizada.png" alt="gamer feliz">
+            <h2>¡Todo listo!</h2>
+            <p>La aventura está por comenzar. ¡Prepárate!</p>
+        </div>
+    </div>
+
     <script src="weplay.js"></script>
 </body>
 </html>
